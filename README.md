@@ -8,7 +8,7 @@
 
 ---
 
-## 📋 Problem Statement & Solution
+## Problem Statement & Solution
 
 ### The Challenge
 India's platform delivery partners lose **20-30% of monthly earnings** during disruptions (extreme weather, curfews, app crashes) with **zero safety net**. Current insurance models don't address their unique needs.
@@ -386,6 +386,15 @@ Weekly Payout Cap: ₹3000
    - Transaction history updated
 
 ---
+### Real vs Fake Differentiation
+
+We differentiate genuine delivery partners from spoofed actors using cross-validation of multiple signals:
+
+- Real users show consistent movement patterns + active delivery history
+- Fake users show static or unrealistic GPS patterns
+- Sensor data (accelerometer, gyroscope) confirms physical movement
+- Network signals (IP/WiFi) reveal if user is actually stationary at home
+- Weather-location consistency ensures user is truly in disruption zone
 
 ## UI/UX Features
 
